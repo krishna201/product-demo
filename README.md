@@ -32,15 +32,15 @@ npx sequelize-cli db:migrate
 undo migratioin
 npx sequelize-cli db:migrate:undo
 ---------------------
-database connection done
-create the api curd operaton
-Category
-   addEditCategory
-   deleteCategory
-   deleteCategory
-   getAllCategory
-product
-   addEditProduct
-   deleteProduct
-   getProductbyId
-   getAllProduct
+* database connection done
+# create the api curd operaton
+- Category
+   - addEditCategory
+   - deleteCategory
+   - deleteCategory
+   - getAllCategory
+-cproduct
+   - caddEditProduct
+   - cdeleteProduct
+   - getProductbyId
+   - getAllProduct
