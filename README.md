@@ -1,3 +1,7 @@
+
+<!-- ABOUT THE PROJECT -->
+## About The Project
+
 * create folder of app (mkdir "folder name")
 * go to folder run cmd `npm init`
 * install dependencies And devDependencies package using (npm install package_name --save and napm i package_name --save-dev)
@@ -16,11 +20,19 @@
   - router
 - indx.js
 
+### Built With
+* [Node.js](https://nodejs.org/)
+* [Express.js](https://expressjs.com/)
+* [PostgreSQL](https://www.postgresql.org/)
+* [Sequelize ORM](https://sequelize.org/)
+
 setup Sequelize Orm and migration given below cmd
 -------------
-Sequelize 
-To install the Sequelize CLI:
+- Sequelize 
+- To install the Sequelize CLI:
+ ```sh
 npm install --save-dev sequelize-cli
+```
 To create an empty project you will need to execute init command
  ```sh
 npx sequelize-cli init
