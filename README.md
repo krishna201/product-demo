@@ -7,14 +7,14 @@
 * install framework package `express` and create listen server on port
 * install some middlewahare package like`cookie-parser`,`cors`,`body-parser` etc as require
 * creted architech folder like
-src
-  config
-  models
-  migration
-  controller
-  util
-  router
-indx.js
+- src
+  - config
+  - models
+  - migration
+  - controller
+  - util
+  - router
+- indx.js
 
 setup Sequelize Orm and migration given below cmd
 -------------
@@ -22,11 +22,16 @@ Sequelize
 To install the Sequelize CLI:
 npm install --save-dev sequelize-cli
 To create an empty project you will need to execute init command
-
+ ```sh
 npx sequelize-cli init
+```
 create or generate migration
-- npx sequelize-cli migration:generate --name add-title-post-table
--  npx sequelize-cli migration:create --name your_migration_name
+ ```sh
+  npx sequelize-cli migration:generate --name add-title-post-table
+```
+ ```sh
+  npx sequelize-cli migration:create --name your_migration_name
+```
 run migration
 npx sequelize-cli db:migrate
 undo migratioin
@@ -39,7 +44,7 @@ npx sequelize-cli db:migrate:undo
    - deleteCategory
    - deleteCategory
    - getAllCategory
--cproduct
+- product
    - caddEditProduct
    - cdeleteProduct
    - getProductbyId
