@@ -1,12 +1,12 @@
-create folder of app (mkdir "folder name")
-go to folder run cmd `npm init`
-install dependencies And devDependencies package using (npm install package_name --save and napm i package_name --save-dev)
-create folder to `src` for all source code
-create main file in src `index.js` call intaill
-setup script in package.json for create server calling `index.js` file
-install framework package `express` and create listen server on port
-install some middlewahare package like`cookie-parser`,`cors`,`body-parser` etc as require
-creted architech folder like
+* create folder of app (mkdir "folder name")
+* go to folder run cmd `npm init`
+* install dependencies And devDependencies package using (npm install package_name --save and napm i package_name --save-dev)
+* create folder to `src` for all source code
+* create main file in src `index.js` call intaill
+* setup script in package.json for create server calling `index.js` file
+* install framework package `express` and create listen server on port
+* install some middlewahare package like`cookie-parser`,`cors`,`body-parser` etc as require
+* creted architech folder like
 src
   config
   models
