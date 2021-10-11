@@ -3,9 +3,7 @@ const cookieParser = require('cookie-parser');
 const bodyParser = require('body-parser');
 const cors = require('cors')
 const productRoute = require('./routes/product.route')
-//Data Base Connection PostgreSQL
-const database = require('./models/db')
-database.sequelize.sync()
+
 const app = express();
 
 app.use(bodyParser.urlencoded({ extended: false }))

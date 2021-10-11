@@ -1,10 +1,9 @@
 
-const db = require("../models/db");
-const Productdb = db.ProductCollection;
-const Categorydb = db.CategoryCollection;
-const { QueryTypes } = require('sequelize');
+const Categorydb = require('../models').category;
+const Productdb = require('../models').product;
 class ExpanceController {
   welcomeExpance = async (req, res) => {
+    console.log(req.body)
     res.send("Wellcome to product App");
   };
 

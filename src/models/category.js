@@ -5,15 +5,17 @@ module.exports = (sequelize, Sequelize) => {
       required: true,
       trim: true,
     },
-    createdOn: {
-      type: Sequelize.DATE,
-      required: true,
-    },
     description: {
       type: Sequelize.STRING,
     },
   })
-
+  CategoryCollection.associate = function (models) {
+    console.log("=============", models)
+    CategoryCollection.hasMany(models.product, {
+      foreignKey: 'id',
+      as: 'products'
+    });
+  };
 
   return CategoryCollection
 }

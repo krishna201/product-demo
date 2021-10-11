@@ -14,6 +14,11 @@ module.exports = (sequelize, Sequelize) => {
       type: Sequelize.STRING,
     },
   })
+  ProductCollection.associate = function (models) {
+    ProductCollection.belongsTo(models.category, {
+      foreignKey: 'category_id'
+    });
+  };
 
 
   return ProductCollection

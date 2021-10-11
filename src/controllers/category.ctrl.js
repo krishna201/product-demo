@@ -1,5 +1,4 @@
-const db = require("../models/db");
-const Categorydb = db.CategoryCollection;
+const Categorydb = require('../models').category;
 class CategoryController {
 
   addEditCategoryFunc = async (req, res) => {
@@ -16,15 +15,16 @@ class CategoryController {
           console.log("categoryData", categoryData)
 
           await Categorydb.update(data, { where: { id: data.category_id } })
-          return res.json({ status: 200, message: "Category Updated successfully", categoryData });
+          return res.json({ status: 200, message: "Category Updated successfully" });
         }
         return res.json({ status: 404, message: "Category not found" });
       }
       await Categorydb
         .create({
-          category_name: data.category_name
+          category_name: data.category_name,
+          description: data.description
         })
-      return res.json({ status: 200, message: "Category Added successfully", data });
+      return res.json({ status: 200, message: "Category Added successfully" });
     } catch (error) {
       console.log("==================", error)
       res.json({ message: error });
