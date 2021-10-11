@@ -45,9 +45,13 @@ create or generate migration
   npx sequelize-cli migration:create --name your_migration_name
 ```
 run migration
+ ```sh
 npx sequelize-cli db:migrate
+```
 undo migratioin
+```sh
 npx sequelize-cli db:migrate:undo
+````
 ---------------------
 * database connection done
 # create the api curd operaton
